@@ -51,9 +51,10 @@ export default io => {
       try {
         if (!message.user || !message.text.trim())
           throw new Error("Mensaje inválido");
-        const fyh = Date.now();
+
         message.text = escapeHtml(message.text);
-        const newMessage = { ...message, fyh };
+        const newMessage = { ...message };
+
         await messagesModel.save(newMessage);
         const messages = await messagesModel.getAll();
         io.sockets.emit("allMessages", messages);

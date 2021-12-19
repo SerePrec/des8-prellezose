@@ -40,47 +40,38 @@ export const productos = [
 export const mensajes = [
   {
     user: "prellezose@gmail.com",
-    text: "Hola!",
-    fyh: 1638381024755
+    text: "Hola!"
   },
   {
     user: "pepo@gmail.com",
-    text: "Hola, que bueno este chat!",
-    fyh: 1638381065335
+    text: "Hola, que bueno este chat!"
   },
   {
     user: "andrespipo@gmail.com",
-    text: "Vamos a probar una frase maś larga para ver como se acomoda a la vista de los mensajes. Que bueno que está esto de los web sockets!!!  🤓🤓🤓",
-    fyh: 1638381217278
+    text: "Vamos a probar una frase maś larga para ver como se acomoda a la vista de los mensajes. Que bueno que está esto de los web sockets!!!  🤓🤓🤓"
   },
   {
     user: "prellezose@gmail.com",
-    text: "Ajusté el formato de la hora para que se guarde como time stamp",
-    fyh: 1638381262867
+    text: "Ajusté el formato de la hora para que se guarde como time stamp"
   },
   {
     user: "prellezose@gmail.com",
-    text: "Así al recuperarla cada usuario lo ajusta a su hora local!",
-    fyh: 1638381286195
+    text: "Así al recuperarla cada usuario lo ajusta a su hora local!"
   },
   {
     user: "pepo@gmail.com",
-    text: "ahhhh esta bueno eso!",
-    fyh: 1638381295163
+    text: "ahhhh esta bueno eso!"
   },
   {
     user: "andrespipo@gmail.com",
-    text: "claro.....",
-    fyh: 1638381312443
+    text: "claro....."
   },
   {
     user: "pepo@gmail.com",
-    text: "Me gusta el tema dark de la página,jajaj",
-    fyh: 1638381345930
+    text: "Me gusta el tema dark de la página,jajaj"
   },
   {
     user: "prellezose@gmail.com",
-    text: "Sí, a mí también",
-    fyh: 1638381366170
+    text: "Sí, a mí también"
   }
 ];

@@ -31,7 +31,7 @@ async function crearTablaMensajes(config) {
       table.increments("id");
       table.string("user", 50).notNullable();
       table.text("text").notNullable();
-      table.bigInteger("fyh").notNullable();
+      table.timestamp("timestamp").defaultTo(knex.fn.now());
     });
 
     console.log("Tabla 'mensajes' creada con éxito");
