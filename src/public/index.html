@@ -18,7 +18,7 @@
       <form id="productForm">
         <div class="mb-3">
           <label for="inputTitle" class="form-label">Título</label>
-          <input type="text" class="form-control" id="inputTitle" name="title">
+          <input type="text" class="form-control" id="inputTitle" name="title" maxlength="50">
         </div>
         <div class="mb-3">
           <label for="inputPrice" class="form-label">Precio</label>
@@ -26,7 +26,7 @@
         </div>
         <div class="mb-3">
           <label for="inputThumbnail" class="form-label">URL de la imágen</label>
-          <input type="text" class="form-control" id="inputThumbnail" name="thumbnail">
+          <input type="text" class="form-control" id="inputThumbnail" name="thumbnail" maxlength="1024">
         </div>
         <button type="submit" class="btn btn-danger">CARGAR</button>
       </form>
@@ -39,7 +39,7 @@
       <form id="userForm" class="input-group my-3">
         <span class="input-group-text">@</span>
         <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Ingrese su e-mail"
-          required />
+          maxlength="50" required />
         <button id="btn-log" type="submit" class="btn btn-danger">Login</button>
       </form>
       <div id="messages-wrapper"></div>
