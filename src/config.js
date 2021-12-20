@@ -15,6 +15,16 @@ const config = {
       charset: "utf8mb4"
     }
   },
+  mariaDbHeroku: {
+    client: "mysql",
+    connection: {
+      host: "us-cdbr-east-05.cleardb.net",
+      user: "b7fcb0328e2d0f",
+      password: "bc06f24d",
+      database: "heroku_b601d9fca46901d",
+      charset: "utf8mb4"
+    }
+  },
   sqlite3: {
     client: "sqlite3",
     connection: {
