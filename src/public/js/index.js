@@ -34,13 +34,28 @@ function renderUsers(data) {
 function renderMessages(data) {
   const { messages } = data;
   let html = "";
+  const today = new Date().toLocaleDateString();
+  let prevDate;
   messages.forEach(message => {
+    messageDate = new Date(message.timestamp).toLocaleDateString();
+    const color = stringToColour(message.user);
+    if (prevDate !== messageDate) {
+      prevDate = messageDate;
+      html += `
+        <div class="date">
+          ${prevDate === today ? "Hoy" : prevDate}
+        </div>
+        `;
+    }
     html += `
-    <div class="message">
-      <b style="color:${stringToColour(message.user)};">${message.user}</b>
-      [ <i>${new Date(message.timestamp).toLocaleString()}</i> ] :
-      <span>${message.text}</span>
-    </div>
+      <div class="message-box">
+        <div class="color" style="background-color:${color};"></div>
+        <div class="message">
+          <b style="color:${color};">${message.user}</b>
+          [ <i>${new Date(message.timestamp).toLocaleTimeString()}</i> ] :
+          <span>${message.text}</span>
+        </div>
+      </div>
     `;
   });
   return html;
