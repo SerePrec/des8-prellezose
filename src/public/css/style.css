@@ -132,24 +132,25 @@ div.bg-yellow {
   scroll-behavior: smooth;
   background-color: #343c42;
   border-radius: 0.5rem;
+  color: #8f8f8f;
 }
 #messages-wrapper .message {
   text-align: left;
   background-color: #212529c0;
-  margin-bottom: 0.25rem;
   padding: 0.25rem 1rem;
   border-radius: 0.5rem;
+  width: 95%;
+  margin: 0.25rem auto;
 }
 #messages-wrapper .message b {
-  color: rgb(50, 50, 233);
   display: block;
   text-align: left;
 }
-#messages-wrapper .message span {
-  color: brown;
-}
 #messages-wrapper .message i {
-  color: green;
+  font-size: 0.8rem;
+}
+#messages-wrapper .message span {
+  color: #c6c6c6;
 }
 
 @media (max-width: 576px) {
