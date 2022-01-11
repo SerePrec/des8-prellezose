@@ -22,6 +22,6 @@ Definir una carpeta DB para almacenar la base datos SQLite3 llamada ecommerce
 Luego de clonar o descargar el repositorio e instalar todas las dependencias con `npm install`, existen dos comandos para levantar el proyecto.
 Para levantarlo en modo de desarrollo junto a nodemon, utilizar `npm run dev`. De lo contrario, para ejecutarlo en "modo producción", utilizar `npm start`
 
-### Deploy en Heroku (Temporal):
+### Deploy en Heroku (temporal):
 
 https://des8-prellezose.herokuapp.com/
